@@ -9,11 +9,11 @@ def add(a: float, b: float) ->:
     Adds two float
 
     args:
-    a(float):first float
-    b(float): second float
+        a(float):first float
+        b(float): second float
 
     return:
-    float: sum of args
+        float: sum of args
     
     """
 
