@@ -4,12 +4,12 @@ This is an annotation function that add two float numbers
 
 """
 
-def add(a: float, b: float) ->:
+def add(a: float, b: float) -> float:
     """
-    Adds two float
+    Add two floats
 
     args:
-        a(float):first float
+        a(float:first float
         b(float): second float
 
     return:
@@ -17,5 +17,5 @@ def add(a: float, b: float) ->:
     
     """
 
-    return (a+b)
+    return a+b
 
