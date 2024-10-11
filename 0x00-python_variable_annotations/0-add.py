@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ 
-Annotation function of float using 'add'
+contains a type-annotation function of float using 'add'
 
 """
 
@@ -13,8 +13,8 @@ def add(a: float, b: float) -> float:
         a (float):first float
         b (float): second float
         
-    Returns:
-    float: sum of args
+    Return:
+        float: sum of args
     
     """
     
