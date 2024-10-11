@@ -10,7 +10,7 @@ def add(a: float, b: float) -> float:
     Add two floats
 
     args:
-        a (float:first float
+        a (float):first float
         b (float): second float
         
     Return:
