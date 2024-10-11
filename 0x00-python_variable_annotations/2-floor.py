@@ -15,4 +15,4 @@ def floor(n: float) -> int:
     Returns
         n(float)
     """
-    return math.floor(n)
+    return int(n)
