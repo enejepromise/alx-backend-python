@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 """ 
-This is an annotation function that add two float numbers
+Annotation function of float using 'add'
 
 """
 
 def add(a: float, b: float) -> float:
     """
+    
     Add two floats
 
     args:
-        a(float:first float
-        b(float): second float
-
-    return:
-        float: sum of args
+        a (float:first float
+        b (float): second float
+        
+    Return:
+    float: sum of args
     
     """
-
+    
     return a+b
 
