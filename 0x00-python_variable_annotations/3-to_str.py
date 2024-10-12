@@ -3,6 +3,7 @@
 For annotated function to_str
 """
 
+
 def st_str(n: float) -> str:
     """
     Returns the string representation of float
