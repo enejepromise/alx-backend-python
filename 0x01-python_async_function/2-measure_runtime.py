@@ -2,14 +2,12 @@
 """A Python3 module."""
 import asyncio
 from typing import List
-
-
-wait_random = __import__("0_basic_async_syntax").wait_random
+from 0_basic_async_syntax import wait_random  # Correct import statement
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
-    """Asynchronous function that returns sorted list of delays."""
+    """Asynchronous function that returns a sorted ist of delays."""
     wait_times = await asyncio.gather(
-        *tuple(map(lambda _: wait_random(max_delay), range(n)))
+        *[wait_random(max_delay) for _ in range(n)]
     )
     return sorted(wait_times)
