@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""A Python3 module for running agathering results."""
+"""A Python3 module for running asyncio tasks and gathering results."""
 
 import asyncio
 from typing import List
 
 
-
 task_wait_random = __import__('3-tasks').task_wait_random
+
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """Creates asyncio tasks and returns the sorted wait times."""
