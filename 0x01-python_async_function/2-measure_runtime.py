@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
-"""A Python3 module."""
+"""
+Contains an async function
+"""
+import time
 import asyncio
-from typing import List
-from 0_basic_async_syntax import wait_random  # Correct import statement
+
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
-async def wait_n(n: int, max_delay: int) -> List[float]:
-    """Asynchronous function that returns a sorted ist of delays."""
-    wait_times = await asyncio.gather(
-        *[wait_random(max_delay) for _ in range(n)]
-    )
-    return sorted(wait_times)
+def measure_time(n: int, max_delay: int) -> float:
+    """
+    measures the total execution time for wait_n
+    """
+    start = time.perf_counter()
+    asyncio.run(wait_n(n, max_delay))
+    end = time.perf_counter()
+
+    return (end - start) / n
